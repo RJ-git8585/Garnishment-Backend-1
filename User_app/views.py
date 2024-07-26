@@ -1535,7 +1535,8 @@ class PasswordResetConfirmView(APIView):
             details=f'Employer {employee.employer_name} successfully forget password with ID {employee.employer_id}. '
         )
         return Response({"message": "Password reset successful.", "status code":status.HTTP_200_OK})
-    
+ 
+
 
 @csrf_exempt
 def Setting(request):
