@@ -1538,6 +1538,7 @@ class PasswordResetConfirmView(APIView):
         return Response({"message": "Password reset successful.", "status code":status.HTTP_200_OK})
  
 
+
 @csrf_exempt
 def Setting(request):
     try:  
