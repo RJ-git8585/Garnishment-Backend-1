@@ -99,7 +99,7 @@ class Tax_details(models.Model):
     fedral_income_tax =models.FloatField()
     social_and_security =models.FloatField()
     medicare_tax= models.FloatField()
-    state_taxes =models.FloatField()
+    state_tax =models.FloatField()
 
 
 class IWOPDFFile(models.Model):

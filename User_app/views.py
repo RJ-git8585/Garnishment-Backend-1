@@ -501,7 +501,6 @@ def get_Location_details(request, employer_id):
                     'status code': status.HTTP_200_OK,
                     'data' : serializer.data}
             return JsonResponse(response_data)
-
         except Tax_details.DoesNotExist:
             return JsonResponse({'message': 'Data not found', 'status code':status.HTTP_404_NOT_FOUND})
     else:
